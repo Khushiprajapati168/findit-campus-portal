@@ -1,0 +1,108 @@
+/* FindIt - Modern Minimal Design System */
+:root {
+  /* Color Palette */
+  --color-primary: #1e293b;        /* Deep Slate / Navy */
+  --color-primary-dark: #0f172a;   /* Darker Navy */
+  --color-primary-light: #334155;
+  --color-brand: #2563eb;          /* Modern Royal Blue */
+  --color-brand-hover: #1d4ed8;
+  --color-accent-teal: #0d9488;
+  --color-accent-purple: #6366f1;
+
+  /* Status Colors */
+  --status-found: #059669;         /* Emerald Green */
+  --status-found-bg: #ecfdf5;
+  --status-found-border: #a7f3d0;
+
+  --status-lost: #e11d48;          /* Rose Red */
+  --status-lost-bg: #fff1f2;
+  --status-lost-border: #fecdd3;
+
+  --status-pending: #d97706;       /* Warm Amber */
+  --status-pending-bg: #fffbeb;
+  --status-pending-border: #fde68a;
+
+  --status-approved: #16a34a;      /* Green */
+  --status-approved-bg: #f0fdf4;
+  --status-approved-border: #bbf7d0;
+
+  --status-rejected: #dc2626;      /* Red */
+  --status-rejected-bg: #fef2f2;
+  --status-rejected-border: #fecaca;
+
+  /* Neutrals */
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+
+  --text-main: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+
+  --border-light: #e2e8f0;
+  --border-subtle: #cbd5e1;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+  --shadow-card-hover: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 4px 8px -2px rgba(15, 23, 42, 0.06);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-brand-hover);
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: var(--transition);
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
